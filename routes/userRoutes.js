@@ -153,7 +153,8 @@ router.patch("/:userId/links/save", async (req, res) => {
 router.get("/:username", async (req, res) => {
     try {
         const user = await User.findOne({ username: req.params.username })
-            .populate('circle', 'username name profileImage');
+            .populate('circleMembers', 'username name profileImage');
+
         if (!user) {
             return res.status(404).json({ error: "User not found" });
         }
