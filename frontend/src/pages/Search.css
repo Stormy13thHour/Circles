@@ -1,0 +1,126 @@
+/* === Search Page Styles === */
+.search-page {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.search-box {
+    height: 80vh;
+    width: 60vw;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.search-input-wrapper {
+    position: sticky;
+    top: 60px;
+    background-color: #fff;
+    z-index: 10;
+    padding: 20px 60px 10px 40px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: #e8e8e8;
+    font-size: 1.2rem;
+}
+
+.search-results {
+    overflow-y: auto;
+    flex: 1;
+    padding: 40px;
+}
+
+.signed-in-user {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.search-user-card {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.user-avatar {
+    background-color: #fff;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.user-username {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    color: #fff;
+}
+
+.user-headline {
+    font-size: 0.9rem;
+    color: #fff;
+    opacity: 0.85;
+    text-align: left;
+}
+
+.search-header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 20;
+    height: 60px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 70%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup-link {
+    position: absolute;
+    top: 70%;
+    right: 60px;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+}

@@ -1,0 +1,94 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/public/outfit/OutfitSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.dashboard-container {
+  background: white;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h1,
+h2 {
+  color: #000000;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #868686;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-card {
+  background: #000000;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.link-card a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.circle-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.circle-section li {
+  background: #ddd;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+@keyframes spinBg {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

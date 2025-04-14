@@ -1,0 +1,181 @@
+.container {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 80px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Outfit", sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.profileHeader {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profileHeaderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.imageUploadWrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.imageUploadInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.editProfile label {
+    display: block;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.editProfile input,
+.editProfile textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.button {
+    padding: 8px 14px;
+    margin: 6px 6px 0 0;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.editLinksSection {
+    margin-top: 50px;
+}
+
+.linkEditItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+.linkEditItem a {
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.linkEditItem button {
+    background-color: #cc3333;
+}
+
+.linkList {
+    margin-top: 30px;
+}
+
+.circleSection {
+    margin-top: 40px;
+}
+
+.centerButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.circleManager {
+    margin-top: 50px;
+}
+
+.editCircleCard {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+.circleNameInput {
+    font-size: 1.1rem;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    width: 60%;
+    font-family: inherit;
+}
+
+.editCircleMembers {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.circleMemberTag {
+    background: #ddd;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.assignDropdown {
+    margin-top: 12px;
+}
+
+.assignDropdown label {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.assignDropdown select {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-family: inherit;
+}
+
+.circleMemberTag {
+    background: #ddd;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    cursor: grab;
+}

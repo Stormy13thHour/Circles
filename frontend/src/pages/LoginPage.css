@@ -1,0 +1,160 @@
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180vmin;
+    height: 180vmin;
+    background-image: url('/public/inverted.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: spinBg 20s linear infinite;
+    opacity: 1;
+    z-index: 0;
+}
+
+@keyframes spinBg {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.login-box {
+    width: 90%;
+    max-width: 360px;
+    min-width: 100px;
+    z-index: 1;
+    color: white;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.login-input {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 16px 28px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.password-hint {
+    font-size: 0.85rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.switch-text {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: black;
+}
+
+.switch-button {
+    background: none;
+    border: none;
+    color: #00aaff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    padding: 0;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .login-bg {
+        width: 120vmin;
+        height: 120vmin;
+    }
+
+    .login-input,
+    .login-button {
+        font-size: 1rem;
+        padding: 10px 14px;
+    }
+
+    .close-button {
+        font-size: 1.2rem;
+    }
+
+    .password-hint,
+    .switch-text,
+    .switch-button,
+    .error-message {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .login-bg {
+        width: 100vmin;
+        height: 100vmin;
+    }
+
+    .login-box {
+        max-width: 280px;
+    }
+
+    .login-input,
+    .login-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .switch-text,
+    .switch-button,
+    .password-hint,
+    .error-message {
+        font-size: 0.75rem;
+    }
+}
