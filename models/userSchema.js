@@ -21,7 +21,13 @@ const userSchema = new mongoose.Schema({
         github: String
     },
     links: [linkSchema],
-    circle: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }]
+    circleMembers: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    circleRequests: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    circles: [{
+        name: String,
+        members: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+        order: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }]
+    }]
 });
 
 module.exports = mongoose.model('User', userSchema);

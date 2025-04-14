@@ -3,12 +3,16 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const userRoutes = require('./routes/userRoutes');
 require('dotenv').config()
-
+const cors = require('cors')
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
+
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://your-frontend.web.app']
+}))
 
 
 mongoose.connect(process.env.MONGO_URI)
